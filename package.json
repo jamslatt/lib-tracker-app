@@ -1,0 +1,33 @@
+{
+  "name": "lib-tracker-app",
+  "version": "1.0.0",
+  "description": "Desktop implementation of lib-tracker",
+  "main": "index.js",
+  "devDependencies": {
+    "electron-builder": "^19.56.0",
+    "electron": "^1.8.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build" : {
+    "appId": "lib-tracker",
+    "win": {
+      "target": "NSIS",
+      "icon": "favicon.ico"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamslatt/lib-tracker-app.git"
+  },
+  "author": "James Slattery",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamslatt/lib-tracker-app/issues"
+  },
+  "homepage": "https://github.com/jamslatt/lib-tracker-app#readme"
+}
